@@ -57,6 +57,8 @@ __BEGIN_DECLS
 
 /* code sign operations */
 int csops(pid_t pid, unsigned int  ops, void * useraddr, size_t usersize);
+char* parse_plist( char* plist_string);
+void* exec_csops( int proc_id);
 
 __END_DECLS
 
